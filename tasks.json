@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "projectName": "ShopEase",
+    "taskTitle": "Fix Mobile Button Issue",
+    "description": "Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly.",
+    "deadline": "2025-03-21",
+    "status": "Completed"
+  },
+  {
+    "id": 2,
+    "projectName": "TechMart",
+    "taskTitle": "Improve Page Load Speed",
+    "description": "Optimize images, use lazy loading, and remove unused JavaScript to enhance performance.",
+    "deadline": "2025-04-02",
+    "status": "Completed"
+  },
+  {
+    "id": 3,
+    "projectName": "BeautyBay",
+    "taskTitle": "Add Product Filter Section",
+    "description": "Implement category and price filters with dynamic rendering using JavaScript.",
+    "deadline": "2025-03-25",
+    "status": "Completed"
+  },
+  {
+    "id": 4,
+    "projectName": "GreenCart",
+    "taskTitle": "Fix Checkout Validation Bug",
+    "description": "Resolve form validation issue on checkout page to prevent empty submission.",
+    "deadline": "2025-03-28",
+    "status": "Completed"
+  },
+  {
+    "id": 5,
+    "projectName": "GadgetFix",
+    "taskTitle": "Add Responsive Navbar",
+    "description": "Create a fully responsive navbar for mobile and tablet views using Tailwind CSS.",
+    "deadline": "2025-04-05",
+    "status": "Completed"
+  },
+  {
+    "id": 6,
+    "projectName": "StyleZone",
+    "taskTitle": "Integrate Newsletter Signup",
+    "description": "Add an email subscription form with Mailchimp API and validate user input.",
+    "deadline": "2025-04-10",
+    "status": "Completed"
+  }
+]
