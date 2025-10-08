@@ -21,7 +21,7 @@
     </style>
 </head>
 
-<body class="max-w-[1400px] mx-auto">
+<body id="container" class="max-w-[1400px] mx-auto">
     <header>
         <nav class="flex items-center justify-between px-10 shadow-sm py-6 mb-6">
             <div class="flex gap-2 items-center">
@@ -31,9 +31,9 @@
             <div class="flex items-center gap-6">
                 <div class="flex items-center gap-3 shadow-md px-3 py-2 rounded-full bg-cyan-50">
                     <img class="w-5" src="./assets/checkbox.png" alt="">
-                    <button class="font-bold">23</button>
+                    <button class="font-bold"><span id="increase">23</span> </button>
                 </div>
-                <div class="shadow-md px-3 py-2 pb-1 rounded-full bg-cyan-50">
+                <div onclick="handleBackgroundColor()" class="shadow-md px-3 py-2 pb-1 rounded-full bg-cyan-50">
                     <button class="w-7 h-7">
                         <img class="w-full" src="./assets/theme-btn.png" alt="">
                     </button>
@@ -43,7 +43,7 @@
     </header>
 
     <main class="grid grid-cols-1 lg:grid-cols-12 gap-5">
-        <div class=" border col-span-1  lg:col-span-9  rounded-md">
+        <div class="col-span-1  lg:col-span-9  rounded-md">
             <div class="grid grid-cols-1 md:grid-cols-12 p-5 gap-5 shadow-md">
                 <div
                     class="flex col-span-1 md:col-span-3 items-center shadow-sm justify-center gap-5 bg-[#a1a7cb] rounded-lg p-8">
@@ -52,7 +52,7 @@
                     </div>
                     <div>
                         <h2>Task Assigned</h2>
-                        <p><span>05</span></p>
+                        <p><span id="reduce">05</span></p>
                     </div>
                 </div>
                 <div
@@ -75,24 +75,18 @@
             </div>
 
             <section id="tasks-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 p-6">
-                <div class="card card-border p-3  bg-[#a1a7cb] ">
-                    <p class="bg-white w-fit px-3 py-1 rounded-md">ShopEase</p>
-                    <div class="">
-                        <h2 class="card-title text-2xl mt-3">Fix Mobile Button Issue </h2>
-                        <p class="bg-white px-3 py-2 rounded-md mt-3">A card component has a figure, a body part, and inside body there are title and actions parts
-                        </p>
-                        <div class="flex justify-between items-center mt-3">
-                            <div>
-                                <p class="font-normal">Deadline</p>
-                                <h3 class="font-bold text-xl">21 March 2025</h3>
-                            </div>
-                            <button class="btn border-none outline-none text-white bg-[#3752FD]">Completed</button>
-                        </div>
-                    </div>
-                </div>
+                
             </section>
         </div>
-        <div class="border grid-cols-1 lg:col-span-3 h-screen rounded-md bg-green-500"></div>
+        <div  class="flex justify-start items-center flex-col shadow-2xl grid-cols-1 lg:col-span-3 rounded-md">
+            <h2 class="mt-5 text-2xl font-bold">Activity Log</h2>
+
+            <button onclick="removeAllActivity()" class="btn border-none outline-none text-white bg-[#3752FD] px-10 mt-3">Clear</button>
+             <section id="activity">
+                     
+             </section>
+            
+        </div>
     </main>
 
 
